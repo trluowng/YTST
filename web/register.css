@@ -1,0 +1,70 @@
+*{
+    margin:0;
+    padding:0;
+    border:none;
+    font-family: 'Open Sans', sans-serif;
+}
+body {
+    background-image: url('background.jpg');
+    overflow: hidden;
+}
+#studen {
+    height: 40px;
+    width: 250px;
+    display: flex;
+    background-color: #ffffff;
+    margin-left: 70%;
+    margin-top: 200px;
+    border-radius:30px;
+    color: #43386df4;
+
+    
+}
+#employer {
+    height: 40px;
+    width: 250px;
+    display: flex;
+    background-color: #43386df4;
+    margin-left: 70%;
+    margin-top: 50px;
+    border-radius:30px;
+    color: #fff;
+
+}
+button {
+    display: inline-block;
+    padding: 15px 25px;
+    font-size: 24px;
+    cursor: pointer;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    background-color: #fff;
+    border: none;
+    border-radius: 15px;
+    display: flex; /* Sử dụng flexbox */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    width: 150px; /* Độ rộng của button */
+    height: 50px; /* Độ cao của button */
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer; /* Con trỏ hiển thị là pointer khi hover */
+}
+button:hover{
+    background-color: #4c8eaf;
+}
+
+button:active {
+    opacity: 0.5; /* Điều chỉnh độ trong suốt khi button được nhấn */
+  }
+a{
+    position: relative;
+    margin-left: 80%;
+    color: #fff; /* Màu chữ */
+    font-size: 16px; /* Kích thước font chữ */
+    font-weight: bold; /* Độ đậm của font chữ */
+    display: block; /* Chuyển đổi thẻ a sang kiểu hiển thị block */
+    top: 200px;
+    right: 50px;
+}

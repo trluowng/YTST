@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>foremployer</title>
+    <link rel="stylesheet" href="foremployer.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.5.0/css/all.css" integrity="sha384-B4dIYHKNBt8Bc12p+WXckhzcICo0wtJAoU8YZTY5qE0Id1GSseTk6S+L3BlXeVIU" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Merriweather:300,400,400i|Noto+Sans:400,400i,700" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600" rel="stylesheet">
+    <style>
+        @font-face {
+          font-family: 'Sergio'; /* Đặt tên cho font */
+          src: url('font/SergioTrendy.ttf') format('truetype'), /* Đường dẫn tới file font Sergio */
+               url('font/SergioTrendy.ttf') format('truetype'); /* Đường dẫn tới file font Sergio */
+          font-weight: normal;
+          font-style: normal;
+        }
+    </style>
+</head>
+<body>
+    <div id="khung" style="background-color: white;">
+        <h2> Đăng Ký</h2>
+        <form id="regisform">
+            <input type="text" id="phone"  placeholder="Họ Và Tên">
+            <input type="text" id="email"  placeholder="Số Điện Thoại"> 
+            <input type="text" id="studenid" placeholder="Email">
+            <input type="text" id="schoolid" placeholder="Số CMND/CCCD"> 
+            <input type="password" id="pass" name="password"  placeholder="Mật Khẩu">
+            <input type="password" id="repass" name="password" placeholder="Nhập lại Mật Khẩu"> 
+            <input type="text" id="code"  placeholder="Mã Xác Thực">
+            <button id="submit"> Đăng Ký </button>
+        </form>
+        <h2 id="randomcode">2Qe38</h2>
+    </div>    
+    <button id ="employer" onclick=""> NHÀ TUYỂN DỤNG</button>
+    <script>
+        document.getElementById("submit").addEventListener("click",
+        function() {
+            var result = confirm("Bạn đã đăng ký thành công!");
+            if (result) {
+                window.location.href = "main.html";
+            }
+        });
+        var studenBackpage = document.getElementById("employer");
+            studenBackpage.addEventListener("click", 
+        function() {
+        // Sử dụng phương thức history.back() để điều hướng người dùng trở lại trang trước đó
+            window.history.back();
+        });
+        window.onload = function() {
+            var khung = document.getElementById("khung");
+            khung.style.left = "90px";
+    // Lấy tham chiếu đến button
+            var button = document.getElementById("employer");
+    // Đặt vị trí mới cho button (vị trí ban đầu)
+            button.style.top = "-500px";
+        };
+    
+    </script>
+</body>
+</html>

@@ -1,0 +1,103 @@
+*{
+    margin:0;
+    padding:0;
+    border:none;
+    font-family: 'Open Sans', sans-serif;
+}
+body {
+    background-image: url('background.jpg');
+    overflow: hidden;
+}
+
+#khung {  
+    border: 1px solid #80808000;
+    grid-column: 6/9;
+    grid-row: 3;
+    height: 520px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    border-radius: 30px;
+    box-shadow: 0px 0px 14px 0px grey;
+    top: 20px;
+    left: -500px;
+    transition: left 1s ease; /* Thời gian chuyển động và kiểu chuyển động */
+}
+input{
+    display: block;
+    border-bottom: 2px solid #00BCD4;
+    margin-top: 6px;
+    margin-bottom: 10px;
+    outline-style: none;
+}
+input[type="text"],input[type="password"] {
+    width: 200px; /* Đặt chiều rộng cho input là 100% */
+    padding: 10px; /* Thêm padding */
+    border-radius: 5px; /* Bo tròn góc */
+    margin-bottom: 20px; /* Thêm khoảng cách dưới */
+    margin-right: 50px;
+}
+#randomcode{
+    position: relative;
+    bottom: 23%;
+    left: 50px;
+    font-family: 'Sergio', sans-serif; /* Sử dụng font Sergio cho thẻ h2 */
+}
+button {
+    display: inline-block;
+    padding: 5px 25px;
+    font-size: 20px;
+    background-color: #4c8eaf;
+    border: none;
+    border-radius: 15px;
+}
+.submit{
+    cursor: pointer;
+    text-align: center;
+    outline: none;
+    color: #fff;
+}
+button:hover{
+    background-color: #4c8eaf;
+}
+button:active{
+    background-color: #4c8eaf;
+    transform: translate(4px);
+}
+#employer{
+    color: #fff ;
+    text-align: center;
+    border-radius: 30px;
+    background-color: #43386df4;
+    position: relative;
+    left: 70%;
+    margin-top: -200px;
+    top: -250px;
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: top 1s ease; /* Thời gian chuyển động và kiểu chuyển động */
+}
+
+div{
+    padding: 15px 25px;
+    font-size: 24px;
+    text-align: center;
+    text-decoration: none;
+    outline: none;
+    background-color: #fff;
+    border: none;
+    border-radius: 15px;
+    display: flex; /* Sử dụng flexbox */
+    align-items: center; /* Căn giữa theo chiều dọc */
+    justify-content: center; /* Căn giữa theo chiều ngang */
+    width: 150px; /* Độ rộng của button */
+    height: 50px; /* Độ cao của button */
+    font-size: 20px;
+    font-weight: bold;
+    cursor: pointer; /* Con trỏ hiển thị là pointer khi hover */
+}
+
+  

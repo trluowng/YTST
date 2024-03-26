@@ -1,0 +1,105 @@
+*{
+    margin:0;
+    padding:0;
+    border:none;
+    font-family: 'Open Sans', sans-serif;
+}
+body {
+    background-image: url('background.jpg');
+    overflow: hidden;
+}
+
+#khung {  
+    border: 1px solid #80808000;
+    height: 520px;
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    border-radius: 30px;
+    box-shadow: 0px 0px 14px 0px grey;
+    top: 25px;
+    left: -350px;
+    transition: left 1s ease;
+}
+input{
+    display: block;
+    border-bottom: 2px solid #00BCD4;
+    margin-top: 6px;
+    margin-bottom: 10px;
+    outline-style: none;
+}
+input[type="text"],input[type="password"] {
+    width: 200px; /* Đặt chiều rộng cho input là 100% */
+    padding: 10px; /* Thêm padding */
+    border-radius: 5px; /* Bo tròn góc */
+    margin-bottom: 20px; /* Thêm khoảng cách dưới */
+    margin-right: 50px;
+}
+
+.input-container {
+    position: relative;
+}
+
+.input-container span {
+    position: absolute;
+    right: 5px;
+    color: red;
+}
+#randomcode{
+    position: relative;
+    bottom: 23%;
+    left: 50px;
+    font-family: 'Sergio', sans-serif; /* Sử dụng font Sergio cho thẻ h2 */
+}
+button {
+    justify-content: center;
+    padding: 5px 25px;
+    font-size: 20px;
+    background-color: #4c8eaf;
+    border: none;
+    border-radius: 15px;
+    height: 50px;
+    top: 4px;
+}
+.submit{
+    cursor: pointer;
+    text-align: center;
+    outline: none;
+    color: #fff;
+}
+button:hover{
+    background-color: #4c8eaf;
+}
+button:active{
+    background-color: #4c8eaf;
+    transform: translate(4px);
+}
+div{
+    text-align: center;
+    background-color: #fff;
+    padding: auto;
+}
+
+#student{
+    color: #43386df4 ;
+    text-align: center;
+    border-radius: 30px;
+    background-color: #fff;
+    position: relative;
+    left: 70%;
+    margin-top: -200px;
+    top: -315px;/*-315*/
+    height: 40px;
+    font-size: 20px;
+    font-weight: bold;
+    transition: top 1s ease ;
+}
+h3{
+    color: red;
+    position: relative;
+    margin-bottom: 0px;
+    bottom: 150px;
+    font-size: 10px;
+}
